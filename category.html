@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>英语培训班</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font_73h1fig9o48/iconfont.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+            background-color: rgb(244, 244, 244);
+        }
+
+        /* 对学习工具的下拉栏重新覆盖样式 */
+        .top-left .xuexi>ul>li {
+            width: 2.33rem;
+        }
+
+        .top-left .xuexi>ul>li>a>img {
+            width: 0.5rem;
+        }
+
+        /* 广告栏 */
+        #sss {
+            width: 100%;
+            position: relative;
+        }
+
+        #sss img {
+            width: 100%;
+            z-index: 1;
+        }
+
+        /* 对时间的样式 */
+        #dao {
+            font-size: 0.7rem;
+            z-index: 5;
+            color: #fff;
+        }
+
+        #RemainD {
+            position: absolute;
+            top: 0.405rem;
+            left: 17.25rem;
+            letter-spacing: 0.17rem;
+        }
+
+        #RemainH {
+            position: absolute;
+            top: 0.405rem;
+            left: 18.85rem;
+            letter-spacing: 0.17rem;
+        }
+
+        #RemainM {
+            position: absolute;
+            top: 0.405rem;
+            left: 20.45rem;
+            letter-spacing: 0.17rem;
+        }
+
+        #RemainS {
+            position: absolute;
+            top: 0.405rem;
+            left: 22.1rem;
+            letter-spacing: 0.17rem;
+        }
+
+        /* 搜索框的下拉栏 */
+        .search_xiala {
+            top: 4.7rem;
+            left: 6.43rem;
+        }
+
+        .search_xiala>ul {
+            width: 16.35rem;
+        }
+
+        /* 我收藏的 */
+        .mytreasure>ul {
+            width: 85%;
+            height: 1rem;
+            line-height: 0.7rem;
+        }
+
+        .treasure>ul {
+            top: 4.72rem;
+            left: 25.63rem;
+            background-color: #fff;
+        }
+
+        /* 分类 */
+        .cat {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 0.5rem;
+            font-size: 0.4rem;
+            color: #666;
+        }
+
+        .cat>ul {
+            display: flex;
+        }
+
+        .cat>ul li {
+            padding: 0.2rem;
+            text-align: center;
+        }
+
+        .cat>ul li:nth-child(odd) {
+            width: 7%;
+        }
+
+        .cat>ul li:nth-child(even) {
+            width: 1%;
+        }
+
+        .cat select {
+            width: 1.8rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+        }
+
+        /* 清除select的默认样式 并设置新的属性值 */
+        select::-ms-expand {
+            display: none;
+        }
+
+        select {
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            padding-right: 0.6rem;
+            border: 0.01rem dashed #ccc;
+            text-align: center;
+            background: url("img/bot-arrow1.png") no-repeat scroll 1.25rem 0.12rem  transparent;
+            background-size: 0.35rem;
+            background-color: #fff;
+        }
+
+        /* 分类-更多选项 */
+        .list {
+            width: 90%;
+            margin: 0.5rem auto;
+            /* height: 4rem; */
+            background-color: #fff;
+            font-size: 0.4rem;
+        }
+        .list .icon-shangla{
+            font-size: 0.4rem;
+        }
+        .list>ul>li,.list>ul>div>li{
+            border-bottom: 0.01rem dashed #eee;
+            padding:0.3rem 0 ;
+            margin:0 0.3rem;
+        }
+        .list>ul>li:nth-last-child(1),.list>ul>li:nth-child(3){
+            border-bottom: none;
+            text-align: center;
+        }
+        .list>ul>li:nth-last-child(1) a,.list>ul>li:nth-child(3) a{
+            color:#333
+        }
+        .more-option,.shouqi{
+            display: none;
+        }
+        .list-row{
+            display: flex;
+        }
+        .list-row>li:nth-child(1){
+            width: 10%;
+            color: #999;
+        }
+        .list-row>li:nth-child(2)>ul{
+            display: flex;
+        }
+        .list-row>li:nth-child(2)>ul>li{
+            margin: 0 0.4rem;
+        }
+        .list-row>li:nth-child(2)>ul>li>a{
+            color: #555;
+        }
+        .list a:hover,.list-row>li:nth-child(2)>ul>li>a:hover{
+            color: rgb(87, 188, 76);
+        }
+
+        /* 课程分类 */
+        .course-sort {
+            width: 90%;
+            margin: 0.5rem auto;
+            height: 46rem;
+        }
+
+        .course-sort>div {
+            float: left;
+        }
+        /* 左侧的详情页 */
+        .course-sort-left {
+            width: 78%;
+            margin-right: 3%;
+            background-color: #fff;
+            height: 44.9rem;
+        }
+        .sort-title{
+            height: 1.3rem;
+            border-bottom: 0.01rem solid #eee;
+            line-height: 1.3rem;
+            padding-left: 0.6rem;
+            font-size: 0.35rem;
+        }
+        .sort-title ul{
+            display: flex;
+
+        }
+        .sort-title>ul>li:nth-child(1){
+            width: 75%;
+        }
+        .sort-title>ul>li:nth-child(1) li{
+            padding-right: 0.6rem;
+        }
+        .sort-title>ul>li:nth-child(1) img{
+            width: 0.35rem;
+            margin-left: 0.1rem;
+        }
+        
+        .sort-title input{
+            width: 1.5rem;
+            height:0.6rem;
+            border: 0.01rem solid #ccc;
+        }
+      
+        .sort-title>ul>li:nth-child(1)>ul>li:nth-child(4){
+            color: #ccc;
+        }
+        .sort-title>ul>li:nth-child(1) a:hover{
+            color: rgb(87, 188, 76);
+        }
+        .aactive{
+            padding-bottom: 0.36rem;
+            border-bottom: 0.08rem solid rgb(87, 188, 76);
+        }
+        .sort-title>ul>li:nth-child(2){
+            width: 25%;
+            color: #666;
+            padding-left: 0.8rem;
+        }
+        .sort-title>ul>li:nth-child(2) img{
+            width: 1.1rem;
+            padding: 0.2rem;
+        }
+        .sort-title>ul>li:nth-child(2)>ul>li:nth-child(3)>img:nth-child(1),.sort-title>ul>li:nth-child(2)>ul>li:nth-child(3)>img:nth-child(2){
+            width:0.8rem;
+        }
+        .sort-title>ul>li:nth-child(2) li{
+            border-left: 0.01rem solid #eee;
+        }
+      
+        .sort-title+iframe{
+            width: 100%;
+            height: 43.6rem;
+            background-color: #fff;
+        }
+        /* 右侧的猜你喜欢 */
+        .course-sort-right {
+            width: 19%;
+            background-color: #fff;
+            height: 12.4rem;
+            font-size: 0.4rem;
+            color: #666;
+        }
+
+        .course-sort-right>ul>li img {
+            width: 50%;
+            float: left;
+            margin-right: 0.3rem;
+        }
+
+        .course-sort-right>ul>li {
+            padding: 0.25rem;
+            border-bottom: 0.01rem solid #eee;
+        }
+
+        .course-sort-right>ul>li:nth-last-child(1) {
+            border-bottom: none;
+        }
+
+        .course-sort-right>ul>li>a>ul>li:nth-child(1) {
+            color: #333;
+            font-size: 0.35rem;
+        }
+
+        .course-sort-right>ul>li>a>ul>li:nth-child(2) {
+            margin-top: 0.15rem;
+            color: rgb(255, 102, 0);
+        }
+
+        .course-sort-right>img {
+            margin-top: 0.5rem;
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="top"></div>
+    <div id="sss">
+        <img src="img/xianshiqianggou.jpg">
+        <div id="daoend" style="display:none;">本次活动已结束。</div>
+        <div id="dao">
+            <div id="RemainD"></div>
+            <div id="RemainH"></div>
+            <div id="RemainM"></div>
+            <div id="RemainS"></div>
+        </div>
+    </div>
+    <div class="search">
+        <ul>
+            <li><a><img src="images/kaixueji.gif" alt=""></a></li>
+            <li>
+                <ul>
+                    <li><input type="search" class="iconfont pl" placeholder="&#xe62b;"></li>
+                    <div class="search_xiala">
+                        <ul>
+                            <li><a href="">一口价699起</a></li>
+                            <li><a href="">5折再减168</a></li>
+                            <li><a href="">送天猫精灵</a></li>
+                        </ul>
+                    </div>
+                    <li><button>搜索</button></li>
+                </ul>
+            </li>
+            <li class="mytreasure">
+                <ul>
+                    <li class="iconfont icon-star__easyico "></li>
+                    <li>我收藏的课程</li>
+                    <li class="iconfont icon-xiala" id="t"></li>
+                </ul>
+            </li>
+            <div class="treasure">
+                <ul>
+                    <li><a>您还没有收藏的班级哦~</a></li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    <div class="cat">
+        <ul>
+            <li>全部课程</li>
+            <li>></li>
+
+            <li>
+                <form action="" name="form1">
+                    <select name="kemu" id="inputkemu" onchange="getCourse()">
+                        <option value="0" class="center-block">请选择科目</option>
+                        <option value="英语">英语</option>
+                        <option value="日语">日语</option>
+                        <option value="韩语">韩语</option>
+                        <option value="法语">法语</option>
+                    </select>
+
+            </li>
+            <li>></li>
+            <li>
+                <select name="course" id="inputcourse">
+                    <option value="0" class="center-block">全部</option>
+                </select>
+                </form>
+            </li>
+
+        </ul>
+    </div>
+    <div class="list">
+        <ul>
+            <li>
+                <ul class="list-row">
+                    <li>考试目标：</li>
+                    <li>
+                        <ul>
+                            <li><a href="">N1</a></li>
+                            <li><a href="">N2</a></li>
+                            <li><a href="">N3</a></li>
+                            <li><a href="">N4</a></li>
+                            <li><a href="">A-C</a></li>
+                            <li><a href="">E-F</a></li>
+                            <li><a href="">其他</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                    <ul class="list-row">
+                            <li>当前水平：</li>
+                            <li>
+                                <ul>
+                                    <li><a href="">N2</a></li>
+                                    <li><a href="">N3</a></li>
+                                    <li><a href="">N4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            </li>
+            <li class="mmore"><a onclick="c()" href="#" >更多选项<span class="iconfont icon-xiala"></span></a></li>
+            <div class="more-option">
+            <li>
+                    <ul class="list-row">
+                            <li>考试内容：</li>
+                            <li>
+                                <ul>
+                                    <li><a href="">日语中高级口译</a></li>
+                                    <li><a href="">CATTI日语</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            </li>
+            <li>
+                    <ul class="list-row">
+                            <li>开班时间：</li>
+                            <li>
+                                <ul>
+                                    <li><a href="">报班即学</a></li>
+                                    <li><a href="">9月开班</a></li>
+                                    <li><a href="">10月开班</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            </li>
+            <li>
+                    <ul class="list-row">
+                            <li>课程品牌：</li>
+                            <li>
+                                <ul>
+                                    <li><a href="">HI Japanese</a></li>
+                                    <li><a href="">沪江日语口语</a></li>
+                                    <li><a href="">其他</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            </li>
+            <li>
+                    <ul class="list-row">
+                            <li>学习内容：</li>
+                            <li>
+                                <ul>
+                                    <li><a href="">初级上册</a></li>
+                                    <li><a href="">初级下册</a></li>
+                                    <li><a href="">中级上册</a></li>
+                                    <li><a href="">中级下册</a></li>
+                                    <li><a href="">高级上册</a></li>
+                                    <li><a href="">阅读</a></li>
+                                    <li><a href="">听力</a></li>
+                                    <li><a href="">词汇</a></li>
+                                    <li><a href="">语法</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+            </li>
+            <li>
+                    <ul class="list-row">
+                            <li>使用教材：</li>
+                            <li>
+                                <ul>
+                                    <li><a href="">新标准日语</a></li>
+                                    <li><a href="">新编日语</a></li>
+                                    <li><a href="">其他</a></li>
+                                </ul>
+                            </li>
+                        </ul>  
+            </li>
+            </div>
+            <li class="shouqi"><a onclick="c()" href="#">收起<span class="iconfont icon-shangla "></span></a></li>
+        </ul>  
+    </div>
+    <div class="course-sort">
+        <div class="course-sort-left">
+            <div class="sort-title">
+                    <ul>
+                            <li>
+                                <ul>
+                                    <li><a class="aactive">综合</a></li>
+                                    <li><a>人气<img src="img/xiajiang.png" alt=""></a></li>
+                                    <li><a>价格<img src="img/bot-arrow1.png" alt=""></a></li>
+                                    <li><input type="text" placeholder="￥"> - <input type="text" placeholder="￥"></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><img src="img/suolue.png" alt=""></li>
+                                    <li><img src="img/menu.png" alt=""></li>
+                                    <li><img src="img/左.png">1/1页<img src="img/右.png" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+            </div>
+            <iframe src="./yingyu.html" name="aaa" frameborder="0"></iframe>
+        </div>
+        <div class="course-sort-right">
+            <ul>
+                <li>猜你喜欢</li>
+                <li>
+                    <a href=""><img src="img/r01.jpg" alt="">
+                        <ul>
+                            <li>英语零基础直达大学六级</li>
+                            <li>￥2720</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="img/r02.jpg" alt="">
+                        <ul>
+                            <li>新版日语零基础至高级</li>
+                            <li>￥2720</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="img/r03.jpg" alt="">
+                        <ul>
+                            <li>2021考研蜕变计划标准班</li>
+                            <li>￥999</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="img/r04.jpg" alt="">
+                        <ul>
+                            <li>2020考研公共课强化冲刺班</li>
+                            <li>￥1264</li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href=""><img src="img/r05.jpg" alt="">
+                        <ul>
+                            <li>从零开始说口语1-4级</li>
+                            <li>￥3730</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+            <img src="img/add.jpg" alt="">
+        </div>
+    </div>
+    <div id="bottom"></div>
+
+
+    <script>
+        var aq=document.querySelectorAll(".sort-title>ul>li:nth-child(1)>ul a");
+        for(var i=0;i<aq.length;i++){
+            aq[i].onclick=function(){
+                for(var j=0;j<aq.length;j++){
+                    aq[j].className="";
+                }
+                this.className="aactive";
+            }
+        }
+        // 更多选项的实现
+        var d = 0;
+    function c() {
+    d = d + 1;
+   
+    var m = document.querySelector(".mmore");
+    var a=document.querySelector(".list .icon-xiala");
+    var q = document.querySelector(".list .more-option");
+    var s = document.querySelector(".list .shouqi");
+    if (d % 2 == 1) {
+        q.style.display = "block";
+        m.style.display="none";
+        s.style.display="block";
+    } else {
+        q.style.display = "none";
+        m.style.display="block";
+        s.style.display="none";
+    }
+}
+
+    </script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/category.js"></script>
+    <!-- 二级下拉菜单实现 -->
+    <script language="javascript" type="text/javascript">
+        var course = [
+            ["英语能力", "英语口语", "英语考试"],
+            ["日语入门", "基础日语", "资格考试", "实用日语", "日语口语"],
+            ["韩语入门", "韩语教材", "韩语考试", "日常韩语", "韩语口语"],
+            ["法语入门", "法语考试", "法语进阶", "法语口语", "特色课程"]
+        ];
+
+        function getCourse() {
+            var seleKemu = document.form1.kemu;
+            var seleCourse = document.form1.course;
+            var kemuCourse = course[seleKemu.selectedIndex - 1];
+
+            seleCourse.length = 1;
+
+            for (var i = 0; i < kemuCourse.length; i++) {
+                seleCourse[i + 1] = new Option(kemuCourse[i], kemuCourse[i]);
+            }
+
+            var value = document.querySelector("#inputkemu").value;
+            console.log(value);
+            if (value == "法语" || value == "日语") {
+                window.parent.aaa.location.href = "./riyu.html";
+                // document.querySelector("#fff").
+            }
+            if (value == "英语" || value == "韩语") {
+                window.parent.aaa.location.href = "./yingyu.html";
+                // document.querySelector("#fff").
+            }
+
+        }
+    </script>
+    <script src="js/index.js"></script>
+    <script>
+        //我的收藏 下拉列表的实现
+        var mt = document.querySelector(".mytreasure>ul");
+        var s = document.querySelector(".mytreasure li:nth-child(2)")
+        var u = document.querySelector(".treasure>ul");
+        mt.onmouseover = function () {
+            u.style.display = "block";
+            s.style.color = "rgb(73, 184, 73)";
+        }
+        mt.onmouseout = function () {
+            u.style.display = "none";
+            s.style.color = "#777";
+        }
+        u.onmouseover = function () {
+            u.style.display = "block";
+            s.style.color = "rgb(73, 184, 73)";
+        }
+        u.onmouseout = function () {
+            u.style.display = "none";
+            s.style.color = "";
+        }
+
+        //搜索框 下拉列表的实现
+        var pl = document.querySelector(".pl");
+        var sx = document.querySelector(".search_xiala");
+        document.onclick = function () {
+            sx.style.display = "none";
+        }
+
+        //点击输入框 下拉列表出现
+        pl.onclick = function () {
+            sx.style.display = "block";
+            event.stopPropagation();
+        }
+
+        //用户在搜索框输入的内容 若为空 则出现下拉列表 否则不出现
+        pl.oninput = pl.onpropertychange = function () {
+            if (this.value == "") {
+                // 首先判断文本框里的值是否为空。注意用双等号！
+                sx.style.display = "block";
+            } else {
+                sx.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+.top {
+    color: #777;
+    font-size: 0.35rem;
+    background-color: rgb(245, 245, 245);
+    height: 1rem;
+    line-height: 1rem;
+    border: 0.01rem solid #ccc;
+    border-top: none;
+}
+
+.top>ul {
+    display: flex;
+}
+
+.top>ul>li {
+    width: 50%;
+}
+
+.top-left>ul {
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 4rem;
+}
+
+.top-right>ul {
+    display: flex;
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+.top-left>ul>li {
+    width: 30%;
+    text-align: center;
+    
+}
+.top-left>ul>li:nth-child(1) a{
+    color: #777;
+}
+.top-right>ul>li {
+    width: 30%;
+    text-align: center;
+}
+.top-right>ul>li:nth-child(1) a,.top-right>ul>li:nth-child(2) a,.top-right>ul>li:nth-child(3) a{
+    color: #777;
+}
+.top-left li:hover,
+.top-right li:hover {
+    background-color: #fff;
+}
+
+.icon-xiala{
+    font-size: 0.3rem;
+}
+
+.xuexizx {
+    position: relative;
+}
+
+.xuexizx>ul {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.xuexiz {
+    position: absolute;
+    top: 1.05rem;
+    left: 5.58rem;
+    display: none;
+    z-index:5;
+}
+
+.xuexiz>ul {
+    border: 0.01rem solid #ccc;
+    border-top: none;
+    border-bottom: none;
+    background-color: #fff;
+    display: flex;
+}
+
+.xuexiz>ul:nth-child(2) {
+    border: 0.01rem solid #ccc;
+    height: 1rem;
+    line-height: 0.25rem;
+
+    display: flex;
+}
+
+.xuexiz>ul>li {
+    text-align: center;
+    margin: 0.4rem 0.4rem 0.2rem 0.4rem;
+}
+
+.xuexiz>ul>li>a {
+    color: #777;
+}
+
+.xuexiz>ul>li:hover a {
+    color: rgb(73, 184, 73);
+}
+
+.xuexiz>ul>li img {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+}
+
+.xuexigj {
+    position: relative;
+}
+
+.xuexigj>ul {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.xuexi {
+    position: absolute;
+    top: 1.05rem;
+    left: 7.85rem;
+    z-index: 5;
+}
+
+.xuexi>ul {
+    border: 0.01rem solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    display: none;
+}
+
+.xuexi>ul>li {
+    width: 2rem;
+    padding-left: 0.3rem;
+}
+
+.xuexi>ul>li>a {
+    color: #777;
+}
+
+.xuexi>ul>li>a>img {
+    width: 0.3rem;
+    padding-right: 0.2rem;
+}
+
+.xuexi>ul>li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.fuwuzx {
+    position: relative;
+}
+
+.fuwuzx>ul {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.fuwu {
+    position: absolute;
+    top: 1.05rem;
+    left: 10.2rem;
+    z-index: 5;
+}
+
+.fuwu>ul {
+    border: 0.01rem solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    display: none;
+}
+
+.fuwu>ul>li {
+    width: 2.3rem;
+    text-align: center;
+}
+
+.fuwu>ul>li>a {
+    color: #777;
+}
+
+.fuwu>ul>li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.mycourse {
+    position: relative;
+}
+
+.mycourse>ul {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.course {
+    position: absolute;
+    top: 1.05rem;
+    left: 27.35rem;
+    z-index: 5;
+}
+
+.course>ul {
+    border: 0.01rem solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    display: none;
+}
+
+.course>ul>li {
+    width: 4.3rem;
+    padding-left: 0.3rem;
+}
+
+.course>ul>li>a {
+    color: #777;
+}
+
+.course>ul>li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.mymessage {
+    position: relative;
+}
+
+.mymessage>ul {
+    display: flex;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.message {
+    position: absolute;
+    top: 1.05rem;
+    right: 1rem;
+    z-index: 20;
+}
+
+.message>ul {
+    border: 0.01rem solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    display: none;
+}
+
+.message>ul>li {
+    width: 2.3rem;
+    text-align: center;
+}
+
+.message>ul>li>a {
+    color: #777;
+}
+
+.message>ul>li:hover {
+    background-color: rgb(240, 240, 240);
+}

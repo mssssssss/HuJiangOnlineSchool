@@ -1,0 +1,36 @@
+    /* 全局css样式 */
+    h1,h2,h3 ,h4 ,h5, h6 ,ul, p, body ,form ,dl ,dt, dd{
+        padding:0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    a:hover{
+        text-decoration: none;
+        color: #000;
+    }
+    ul{
+        list-style: none;
+    }
+    img{
+        display: inline;
+        border:none;
+    }
+    /* 移动端： */
+    body{
+        /* min-width: 320px; */
+        /* max-width: 750px; */
+        margin: 0 auto;
+
+        overflow-x: auto;
+    }
+    /* rem解决方案 */
+    html{
+        font-size: 3vw;
+        font-family: "宋体";
+    }
+
+
+  

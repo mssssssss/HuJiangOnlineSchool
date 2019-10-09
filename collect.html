@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>收银台</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="font_73h1fig9o48/iconfont.css">
+    <style>
+        body {
+            background-color: rgb(235, 236, 237)
+        }
+
+        .title>ul {
+            width: 100%;
+            height: 1.3rem;
+            background-color: #fff;
+            display: flex;
+            line-height: 1.3rem;
+            box-shadow: 0.1rem 0.1rem 0.15rem rgb(219, 219, 220)
+        }
+
+        .title>ul>li:nth-child(1) {
+            width: 30%;
+            font-size: 0.6rem;
+            color: rgb(68, 68, 68);
+            text-align: center;
+        }
+
+        .title>ul>li:nth-child(2) {
+            width: 70%;
+            font-size: 0.3rem;
+            color: #999;
+        }
+
+        .title>ul>li:nth-child(2)>ul {
+            margin-left: 14rem;
+            display: flex;
+        }
+
+        .title>ul>li:nth-child(2)>ul>li {
+            width: 37%;
+        }
+
+        .title>ul>li:nth-child(2)>ul>li:nth-child(2) a {
+            color: #555;
+        }
+
+        .pay {
+            width: 75%;
+            margin: 0 auto;
+            font-size: 0.45rem;
+            margin-top: 0.8rem;
+        }
+
+        .pay>div:nth-child(1) {
+            margin-bottom: 0.4rem;
+            margin-left: 0.4rem;
+        }
+
+        .pay>div:nth-child(1)>span {
+            color: rgb(251, 117, 41);
+        }
+
+        .pay-way>ul {
+            display: flex;
+            color: #777;
+            font-size: 0.35rem;
+            margin-bottom: 0.6rem;
+            margin-left: 0.4rem;
+        }
+
+        .pay-way>ul>li {
+            margin-right: 0.8rem;
+        }
+
+        .pay-way>ul>li:nth-last-child(1) {
+            margin-left: 7rem;
+        }
+
+        .pay-way>ul>li:nth-last-child(1)>span {
+            color: rgb(251, 117, 41);
+            font-size: 0.7rem;
+        }
+
+        .platform {
+            width: 100%;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            background-color: #fff;
+            font-size: 0.45rem;
+            border-bottom: 0.005rem solid #ccc;
+        }
+
+        .platform .icon-xiala {
+            font-size: 0.4rem;
+            margin-left: 0.4rem;
+            display: inline;
+            margin-right: 0.1rem;
+            color: #777;
+        }
+
+        .platform>ul {
+            display: flex;
+        }
+
+        .platform li:nth-child(3) {
+            font-size: 0.3rem;
+            color: #777;
+            margin-left: 0.2rem;
+        }
+
+        .platform-content {
+            display: none;
+
+        }
+
+        .platform-content>ul {
+            background-color: rgb(245, 246, 247);
+            height: 2rem;
+            display: flex;
+
+        }
+
+        .platform-content>ul>li {
+            margin: 0.5rem;
+        }
+
+        .platform-content>ul>li>img {
+            width: 100%;
+            border: 0.01rem solid #ccc;
+        }
+
+        .platform-content>ul>li>img:hover {
+            border: 0.01rem solid rgb(255, 96, 41);
+        }
+
+        .platform-content .img-selected {
+            border: 0.01rem solid rgb(255, 96, 41);
+        }
+
+        .but button {
+            width: 3.8rem;
+            height: 1.1rem;
+            border-radius: 0.2rem;
+            margin-top: 0.6rem;
+            background-color: rgb(255, 96, 41);
+            color: #fff;
+            font-size: 0.45rem;
+            border: none;
+        }
+
+        .problem {
+            font-size: 0.3rem;
+            color: rgb(174, 164, 184);
+            margin-top: 0.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 0.01rem solid #ccc;
+            margin-left: 0.4rem;
+        }
+
+        .problem li {
+            margin: 0.35rem;
+        }
+
+        .problem li:nth-child(1) {
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        #bot {
+            margin-top: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <ul>
+            <li>收银台</li>
+            <li>
+                <ul>
+                    <li>你好，花开半夏</li>
+                    <li><a href="">帮助中心</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="pay">
+        <div>
+            请在<span>2019-09-29 14:44前</span>完成支付！逾期订单将取消
+        </div>
+        <div class="pay-way">
+            <ul>
+                <li>订单号: 33480578</li>
+                <li>英语零基础直达大学六级【开学季特惠班】</li>
+                <li><span class="t-price"></span>元</li>
+            </ul>
+        </div>
+        <div class="platform">
+            <ul>
+                <li class="iconfont icon-xiala" style="transform:rotate(270deg)" ></li>
+                <li style="font-weight: bold">平台支付</li>
+                <li>（支付宝、微信等）</li>
+            </ul>
+        </div>
+        <div class="platform-content" style="display: block">
+            <ul>
+                <li><img src="images/pay1_1.jpg" alt="" class="img-selected"></li>
+                <li><img src="images/pay1_2.jpg" alt=""></li>
+                <li><img src="images/pay1_3.jpg" alt=""></li>
+                <li><img src="images/pay1_4.jpg" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="platform">
+            <ul>
+                <li class="iconfont icon-xiala"></li>
+                <li>银行卡支付</li>
+            </ul>
+        </div>
+        <div class="platform-content">
+            <ul>
+                <li><img src="images/pay2_1.jpg" alt=""></li>
+                <li><img src="images/pay2_2.jpg" alt=""></li>
+                <li><img src="images/pay2_3.jpg" alt=""></li>
+                <li><img src="images/pay2_4.jpg" alt=""></li>
+                <li><img src="images/pay2_5.jpg" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="platform">
+            <ul>
+                <li class="iconfont icon-xiala"></li>
+                <li>分期付</li>
+            </ul>
+        </div>
+        <div class="platform-content">
+            <ul>
+                <li><img src="images/pay3.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="but">
+            <button type="button" id="paySuccess">立即支付</button>
+        </div>
+        <div class="problem">
+            <ul>
+                <li>付款遇到问题:</li>
+                <li>1.如您的订单金额较大，建议选择“分期付”。</li>
+                <li>2.建议您切换到IE浏览器进行支付，如提示“需安装控件”，请按提示进行安装。</li>
+                <li>3.如您无法使用在线支付，可联系客服选择汇款支付。客服热线：4008-220-220 更多帮助>></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bot"></div>
+    <script>
+        // 实现支付方式的下拉菜单
+        var m = document.querySelectorAll(".platform li:nth-child(1)");
+        var s = document.querySelectorAll(".platform li:nth-child(2)");
+        var q = document.querySelectorAll(".platform-content");
+
+        for (var i = 0; i < m.length; i++) {
+            m[i].index = i;
+            m[i].onclick = function () {
+                if (q[this.index].style.display == "none") {
+                    this.style.transform = "rotate(270deg)";
+                    // console.log(d);
+                    q[this.index].style.display = "block";
+                    s[this.index].style.fontWeight = "bold";
+
+                } else {
+                    this.style.transform = "rotate(360deg)";
+                    // 在原来的基础上旋转角度
+                    q[this.index].style.display = "none";
+                    s[this.index].style.fontWeight = "";
+                }
+            }
+        }
+    </script>
+    <script>
+        // 支付方式的确定 只能选择一个
+        var t = document.querySelectorAll(".platform-content img");
+        for (var i = 0; i < t.length; i++) {
+            t[i].onclick = function () {
+                for (var j = 0; j < t.length; j++) {
+                    t[j].className = "";
+                }
+                this.className = "img-selected";
+            }
+        }
+    </script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        //加载底部的网页
+        $(document).ready(function () {
+            $("#bot").load("bot.html");
+            $("#paySuccess").on('click',function () { 
+                alert("订单支付成功，共消费您金额"+getParams("param")+" ￥");
+                window.open("./index.html");
+             })
+        })
+    </script>
+    <script>
+        //得到结算页面的参数
+        function getParams(key) {
+            var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        };
+        document.querySelector(".t-price").innerHTML = getParams("param");
+    </script>
+</body>
+
+</html>

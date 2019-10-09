@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>    
+    <script src="js/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/base.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="font_73h1fig9o48/iconfont.css">
+    <link rel="stylesheet" href="css/top.css">
+    <style>
+        /* 对学习工具的下拉栏重新覆盖样式 */
+         .top-left .xuexi>ul>li {
+            width: 2.33rem;
+        }
+
+        .top-left .xuexi>ul>li>a>img {
+            width: 0.5rem;
+        }
+   
+       
+
+    </style>
+</head>
+<body>   
+     <div class="container-fluid">
+       
+      <div class="row" id="top" ></div>
+       
+      <div class="row ">
+          <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">      
+                <div class="row" style="margin-top: 3rem; margin-left: 0.2rem">
+                    <div class="col-md-offset-2 col-md5"> <img src="img/huJiangLogo.png" class="img-responsive center-block" alt="Image"></div>
+                </div>
+                
+          </div>
+          
+         
+          
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-md-offset-1">  
+                <form  role="form" action="index.html" onsubmit=" return checkRegister()">
+                    <div class="text-center" style="margin-bottom: 1.0rem;margin-top: 1.0rem;font-size: 0.8rem">注册</div>
+                        <div class="form-group" >
+                                <label for="name" style="font-size:0.42rem" >用户名:<label id="nameError" style="font-size: 0.42rem" ></label></label>
+                                <input  required="true" style="font-size:0.35rem; width: 100% ;height:0.8rem"  type="text" class="form-control"   id="usrName" placeholder="请输入用户名" onblur="checkName()" />          
+                        </div>
+                        <div class="form-group">
+                             <label for="pwd1" style="font-size:0.42rem">密码: <label id="passwordError" style="font-size: 0.42rem"></label></label>
+                             <input  required="true" style="font-size:0.35rem; width: 100% ;height:0.8rem;"  type="password" class="form-control" id="password" placeholder="请输入密码" onblur="checkPassword()" />                           
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd2" style="font-size:0.42rem">确认密码:<label id="rePasswordError" style="font-size: 0.42rem"></label></label>
+                            <input style="font-size:0.35rem;width: 100% ;height:0.8rem ;" required="true" type="password" class="form-control"  id="rePassword" placeholder="请确认密码" onblur="reCheckPassWord()"/>
+                            
+                        </div>
+                        <!-- <div class="form-group">
+                        <div class="aui-form-group " style="width: 2rem; padding-top: 0" >
+                                <label class="aui-label-control" style="font-size:0.34rem ;margin-bottom: 0.5rem;" >
+                                    头像上传:
+                                    <span style="font-size: 0.28rem; margin-top: 0.05rem; ">小于5M</span>
+                                </label>
+                                <div class="aui-form-input">
+                                    <div class="aui-content-img-box aui-content-full">
+                                        <div class="aui-photo aui-up-img clear">
+                                            <section class="aui-file-up fl">
+                                                <img src="img/up.png" class="add-img" style="width: 3rem;  height:3rem">
+                                                <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple/>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label for="touxiang"  style="font-size:0.42rem" >头像上传:</label>
+                            <input  style="font-size:0.42rem" type="file"  id="headPhoto" name="headPhoto" />
+                            <div  ><img  id="imag" src="img/up.png"  alt="" style="height:5rem;width: 5rem;"></div>
+                        </div>
+                        <div class="form-group">
+                           <label for="" class="control-label"  style="font-size:0.42rem">性别:</label>
+                        
+                           <div class="form-inline">
+                            <div class="radio">
+                               <label  style="font-size:0.42rem">
+                                   <input type="radio" name="man" id="inputman" value="" checked="checked">
+                                   男
+                               </label>
+                           </div>
+
+                           
+                           <div class="radio">
+                               <label  style="font-size:0.42rem">
+                                   <input type="radio" name="man"  value="" >
+                                   女
+                               </label>
+                           </div>
+
+                           </div>
+                        
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label style="font-size: 0.3rem;height: 0.6rem;"><input style="width:0.5rem;height:0.3rem;" required="true" type="checkbox" id="checkBox1"/><div style="margin-left: 0.1rem">我已阅读并接受《 <a href="#" target="_blank" >沪江网络服务使用协议</a>》和《<a href="#" target="_blank">沪江服务条款</a>》</div></label>
+                           </div>
+                         <div class="row">
+                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <button type="submit" class="btn btn-success center-block" style="width: 2rem;height: 1rem; font-size: 0.5rem;">提交</button>
+                             </div>
+                             
+                             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+                                    <button type="button" class="btn btn-danger center-block" id="reset" style="width: 2rem;height: 1rem;font-size: 0.5rem">重置</button>
+                             </div>
+
+                         </div>
+                        </div>
+                        
+                                           
+                </form>
+          </div> 
+          
+          <!-- <div class="aui-mask aui-works-mask">
+                <div class="aui-mask-content">
+                    <p class="aui-delete-text">确定要删除你上传的资料？</p>
+                    <p class="aui-check-text">
+                        <span class="aui-delete aui-accept-ok">确定</span>
+                        <span class="aui-accept-no">取消</span>
+                    </p>
+                </div>
+            </div>   -->
+      </div>  
+      
+      <div class="row">
+          <div class="col-md-12 text-center" style="margin-top: 0.2rem; margin-bottom:0.3rem">
+              <!-- 链接触发模态框 -->
+                <a data-toggle="modal" data-target="#login" style="font-size: 0.35rem"><span class="glyphicon glyphicon-log-in"></span> 已有账号?点击登录</a> 
+                <div id="login" class="modal fade">
+                       <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                                   <!-- data-dismiss="modal"，是一个自定义的 HTML5 data 属性。在这里它被用于关闭模态窗口 -->
+                                   <button type="button" class="close" data-dismiss="modal">
+                                        &times;
+                                    </button>
+                                    <h4 class="modal-title">登录</h4>
+                               </div>
+                               
+                               <div class="modal-body">
+                                   <form class="form-horizontal" action="index.html">
+                                           <div class="form-group">
+                                               <label for="" class="col-sm-2 control-label">用户名</label>
+                                               
+                                               <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                               <input class="form-control"  type="text" placeholder="">
+                                                   
+                                               </div>
+                                               
+                                           </div>
+                                           <div class="form-group">
+                                               <label for="" class="control-label col-sm-2">密码</label>
+                                               
+                                               <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                               <input class="form-control" type="password" placeholder="">
+                                                   
+                                               </div>
+                    
+                                           </div>
+                                           <div class="text-right">
+                                               <button class="btn btn-primary" type="submit">登录</button>
+                                               <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                                           </div>
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+          </div>
+      </div>
+      
+      <div class="row" id="bottom" >
+          
+      </div>
+      
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#top").load("top.html");
+        $("#bottom").load("bot.html");
+        $("#reset").on("click",function () {
+            $('#password').val("");
+            $('#rePassword').val("");
+            $('#usrName').val("");
+            // var isChecked = $('#checkBox1').is(":checked"); 
+            // //设置选中 
+            // $('#checkBox').prop('checked',true); 
+            $("#checkBox1").attr("checked",false);
+          })
+    }) 
+    
+/*
+ * 验证密码
+ */
+    function checkPassword(){
+    if ($.trim($('#password').val()).length == 0) {
+        $('#passwordError').html('<span style="color:red">密码没有输入<span>');
+        $('#password').focus();
+        return false;
+    } else {
+        $('#passwordError').html('');
+        var rePass = $.trim($('#rePassword').val());
+        var pass = $.trim($('#password').val());
+        if (rePass.length != 0) {
+            if (rePass != pass) {
+                $('#rePasswordError').html('<span style="color:red">两次密码不一致<span>');
+                return false;
+            } else {
+                $('#rePasswordError').html('');
+                return true;
+            }
+        }
+    }
+}
+/*
+ * 重复密码
+ */
+ function reCheckPassWord() {
+    var rePass = $.trim($('#rePassword').val());
+    if (rePass.length == 0) {
+        $('#rePasswordError').html('<span style="color:red">密码没有输入<span>');
+        $('#rePassword').focus();
+        return false;
+    } else {
+        $('#rePasswordError').html('');
+        var pass = $.trim($('#password').val());
+        if (pass.length == 0) {
+            $('#rePassword').val('');
+            $('#passwordError').html('<span style="color:red">密码没有输入<span>');
+            $('#password').focus();
+            return false;
+        } else if (rePass != pass) {
+            $('#rePasswordError').html('<span style="color:red">两次密码不一致<span>');
+            return false;
+        } else {
+            $('#rePasswordError').html('');
+            return true;
+        }
+    }
+}
+   
+/*
+*用户名
+*/
+function checkName() {
+    var reg = /^[A-Za-z0-9]{6,16}$/;  
+    if ($.trim($('#usrName').val()).length == 0) {
+        $('#nameError').html('<span style="color:red">用户名未填写</span>');
+        $('#usrName').focus();
+        return false;
+    }else if(!reg.test($.trim($('#usrName').val())))
+    {
+        $('#nameError').html('<span style="color:red">用户名需以6-16位字母和数字组成</span>');
+        return false;
+    }
+     else {
+        $('#nameError').html('');
+        return true;
+    }
+
+}
+  
+/*
+*用户协议
+*/
+  function checkBox() {
+      if($("#checkBox1").attr('checked')){
+        return true;
+      }else{
+        alert("未选中");
+        return false;
+      }
+    }
+  /*
+ * 注册表单提交时验证
+ */
+function checkRegister() {
+   
+    if (checkPassword() == false) {
+        return false;
+    }
+    if (checkrePassword() == false) {
+        return false;
+    }
+    if (checkName() == false) {
+        return false;
+    }
+    if(checkBox()==false){
+        return false;
+    }
+   
+}
+  </script>
+    <script>
+      /*显示上传的图片*/
+        function getObjectURL(file) {
+                var url = null ;
+                if (window.createObjectURL!=undefined) { // basic
+                    url = window.createObjectURL(file) ;
+                } else if (window.URL!=undefined) { // mozilla(firefox)
+                    url = window.URL.createObjectURL(file) ;
+                } else if (window.webkitURL!=undefined) { // webkit or chrome
+                    url = window.webkitURL.createObjectURL(file) ;
+                }
+                return url ;
+            }
+            $('#headPhoto').change(function() {
+                var eImg=$('#imag');
+                eImg.attr('src', getObjectURL($(this)[0].files[0])); // 或 this.files[0] this->input
+                $(this).after(eImg);
+            });
+
+            
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/up.js"></script> -->
+    <!-- <script src="js/register.js"></script> -->
+</body>
+</html>
+

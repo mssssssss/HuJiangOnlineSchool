@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/settlement.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>结算</title>
+</head>
+<body>
+    <header>
+        <span id="top_left">结算中心</span>
+        <span id="top_right1"><a href="#">帮助中心</a></span>
+        <span id="top_right2">你好，花开半夏</span>
+        <div id="shadow"></div>
+    </header>
+    <section>
+        <div id="settlement">
+            <div id="title">
+                <span>商品清单</span>
+                <ul class="settlement_right">
+                    <li class="settlement_right_gg">售价</li>
+                    <li class="settlement_right_gg">数量</li>
+                    <li class="settlement_right_gg">促销优惠</li>
+                    <li class="settlement_right_gg">小计</li>
+                    <li class="settlement_right_gg">编辑</li>
+                </ul>
+            </div>
+            <ul id="a">
+                <li class="settlement_goods_tt">英语零基础直达大学八级【开学季特惠班】</li>
+                <li ><!--class="settlement_right" -->
+                    <ul class="settlement_right">
+                        <li id="cost_a" class="settlement_right_gg" value="2899">￥2899</li>
+                        <li class="settlement_right_gg">
+                            <input class="num" id="number_a" type="text" value="1"/>
+                        </li>
+                        <li id="discount_a" class="settlement_right_gg" value="1200">￥1200</li>
+                        <li id="little_cost_a" class="settlement_right_gg" value="1699"></li>
+                        <li class="settlement_right_gg"><button class="set_r_btn" value="a" type="button">删除</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="b">
+                <li class="settlement_goods_tt">英语零基础直达大学七级【开学季特惠班】</li>
+                <li ><!--class="settlement_right" -->
+                    <ul class="settlement_right">
+                        <li id="cost_b" class="settlement_right_gg" value="2899">￥2899</li>
+                        <li class="settlement_right_gg">
+                            <input class="num" id="number_b" type="text" value="1"/>
+                        </li>
+                        <li id="discount_b" class="settlement_right_gg" value="1200">￥1200</li>
+                        <li id="little_cost_b" class="settlement_right_gg" value="1699"></li>
+                        <li class="settlement_right_gg"><button class="set_r_btn" value="b" type="button">删除</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="c">
+                <li class="settlement_goods_tt">英语零基础直达大学六级【开学季特惠班】</li>
+                <li ><!--class="settlement_right" -->
+                    <ul class="settlement_right">
+                        <li id="cost_c" class="settlement_right_gg" value="2899">￥2899</li>
+                        <li class="settlement_right_gg">
+                            <input class="num" id="number_c" type="text" value="1"/>
+                        </li>
+                        <li id="discount_c" class="settlement_right_gg" value="1200">￥1200</li>
+                        <li id="little_cost_c" class="settlement_right_gg" value="1699"></li>
+                        <li class="settlement_right_gg"><button class="set_r_btn" value="c" type="button">删除</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="d">
+                <li class="settlement_goods_tt">英语零基础直达大学八级【开学季特惠班】</li>
+                <li ><!--class="settlement_right" -->
+                    <ul class="settlement_right">
+                        <li id="cost_d" class="settlement_right_gg" value="2899">￥2899</li>
+                        <li class="settlement_right_gg">
+                            <input class="num" id="number_d" type="text" value="1"/>
+                        </li>
+                        <li id="discount_d" class="settlement_right_gg" value="1200">￥1200</li>
+                        <li id="little_cost_d" class="settlement_right_gg" value="1699"></li>
+                        <li class="settlement_right_gg"><button class="set_r_btn" value="d" type="button">删除</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="e">
+                <li class="settlement_goods_tt">英语零基础直达大学八级【开学季特惠班】</li>
+                <li ><!--class="settlement_right" -->
+                    <ul class="settlement_right">
+                        <li id="cost_e" class="settlement_right_gg" value="2899">￥2899</li>
+                        <li class="settlement_right_gg">
+                            <input class="num" id="number_e" type="text" value="1"/>
+                        </li>
+                        <li id="discount_e" class="settlement_right_gg" value="1200">￥1200</li>
+                        <li id="little_cost_e" class="settlement_right_gg" value="1699"></li>
+                        <li class="settlement_right_gg"><button class="set_r_btn" value="e" type="button">删除</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="settlement_all_money">
+                <span class="settlement_right_gg" id="all_money_title">商品总额</span>
+                <span id="all_money"></span>
+            </div>
+            <div id="stu_information">
+                <span>学员信息</span><br>
+                <div>
+                <span>&nbsp;&nbsp;&nbsp;<span style="color: red;">*</span>手机号码</span>
+                <input id="tel" type="tel" value="12345678910">
+                </div>
+            </div>
+            <div id="accept">
+                <input id="ch" type="checkbox" onclick="check()">
+                <span>我已阅读并接受</span>
+                <a href="#" data-toggle="modal" data-target="#myModal" style="font-size: 0.5rem">《售后政策》</a>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    售后政策
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                一、退换货政策<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;1、沪江网校所售商品均来自正规进货渠道，均可索要发票。所有商品都可以享受国家规定的售后服务。沪江网校将严格按照国家三包政策，针对所售商品履行保修、换货和退货的义务。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;2、自签收日期7日内，若出现国家三包所规定的质量问题时，经由沪江售后服务中心检验属实，您可以选择退货、换货或者维修；第8日至第15日内时，您可以选择换货或者维修。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;3、自签收日期7日内，因客户误购、多购等非质量问题在商品本身性能完好、品相全新、未经使用、相关附属配件齐全，不影响沪江二次销售的前提下，可以申请退货。但是如果顾客损坏了商品的外包装、配件，或是由于使用不当，而非质量问题造成商品损坏的，恕不享受该服务，敬请谅解。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;4、沪江针对每张订单承担一次运费（最高为15元），您在沪江网校申请退货时，请先垫付快递费用（请勿用到付方式退货），沪江网校会将退回产生的运费一并加入到您的退款金额中。<br>
+                                二、以下情况不在退换货范围之内<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;1、任何已使用过的商品，若无质量问题，不接受退换；<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;2、特殊商品若无质量问题，不接受退换。<br>
+                                三、退换货特殊说明与提醒<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;1、退换货时，请您务必将商品的外包装、内带附件、鉴定证书、说明书等随同商品一起退回。商品如包装破损或相关资料丢失，我们将不能为您办理退换服务。<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;2、沪江网校所售奢侈品均拍照存证，并使用沪江专用安全封条。此类货品签收后如需办理退换的，请务必保证专用安全封条的完整性，一旦发现有封条有破裂，损坏，视为商品被使用过，沪江网校不予退换。<br>
+                                四、退换货流程<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;您需要于审核通过后两日内将退/换货商品寄出，寄回时，请您尽量选择团货网发货时使用的物流公司承运，或其他普通快递承运，并提供所使用的物流公司和单号以便我们及时跟进与处理。<br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="make_sure">
+                <label style="font-size: 0.6rem ">应付总额</label><span id="mk_money"></span><br>
+                <button type="button" disabled id="mk_sure">确认购买</button>
+            </div>
+        </div>
+        
+        <hr>
+    </section>
+    <footer>
+        <p id="bottom">
+            关于沪江|媒体报道|联系我们|商务合作|沪江招聘|帮助中心|意见反馈|全站地图|沪B2-20110096 Copyright © 2007-2019 沪江
+        </p>
+    </footer>
+</body>
+</html>
+<script>
+    $(".set_r_btn").click(function(){
+        var btn_val = (this).value;
+        var frame = "#"+btn_val;
+        $(frame).css("display","none");
+        var sub = document.getElementById("little_cost_"+btn_val).value;
+        document.getElementById("little_cost_"+btn_val).value = 0;
+        var all = document.getElementById("all_money").value;
+        all = all - sub;
+        document.getElementById("all_money").innerHTML = "￥"+all;
+        document.getElementById("all_money").value = all;
+        document.getElementById("mk_money").innerHTML = "￥"+all;
+        document.getElementById("mk_sure").value = all;
+    })
+
+    var a1=document.getElementById("cost_a").value;
+    var a2=document.getElementById("number_a").value;
+    var a3=document.getElementById("discount_a").value;
+    var a4 = (a1-a3)*a2;
+    document.getElementById("little_cost_a").innerHTML="￥"+a4;
+    document.getElementById("little_cost_a").value = a4;
+
+    var b1=document.getElementById("cost_b").value;
+    var b2=document.getElementById("number_b").value;
+    var b3=document.getElementById("discount_b").value;
+    var b4 = (b1-b3)*b2;
+    document.getElementById("little_cost_b").innerHTML="￥"+b4;
+    document.getElementById("little_cost_b").value = b4;
+
+
+    var c1=document.getElementById("cost_c").value;
+    var c2=document.getElementById("number_c").value;
+    var c3=document.getElementById("discount_c").value;
+    var c4 = (c1-c3)*c2;
+    document.getElementById("little_cost_c").innerHTML="￥"+c4;
+    document.getElementById("little_cost_c").value = c4;
+
+    var d1=document.getElementById("cost_d").value;
+    var d2=document.getElementById("number_d").value;
+    var d3=document.getElementById("discount_d").value;
+    var d4 = (d1-d3)*d2;
+    document.getElementById("little_cost_d").innerHTML="￥"+d4;
+    document.getElementById("little_cost_d").value = d4;
+
+    var e1=document.getElementById("cost_e").value;
+    var e2=document.getElementById("number_e").value;
+    var e3=document.getElementById("discount_e").value;
+    var e4 = (e1-e3)*e2;
+    document.getElementById("little_cost_e").innerHTML="￥"+e4;
+    document.getElementById("little_cost_e").value = e4;
+
+    var all = a4+b4+c4+d4+e4;
+    document.getElementById("all_money").innerHTML = "￥"+all;
+    document.getElementById("all_money").value = all;
+    document.getElementById("mk_money").innerHTML = "￥"+all;
+    document.getElementById("mk_sure").value = all;
+
+
+
+    $(".num").focus(function(){
+    });
+    $(".num").blur(function(){
+    var a1=document.getElementById("cost_a").value;
+    var a2=document.getElementById("number_a").value;
+    var a3=document.getElementById("discount_a").value;
+    var a4 = (a1-a3)*a2;
+    document.getElementById("little_cost_a").innerHTML="￥"+a4;
+    document.getElementById("little_cost_a").value = a4;
+
+
+    var b1=document.getElementById("cost_b").value;
+    var b2=document.getElementById("number_b").value;
+    var b3=document.getElementById("discount_b").value;
+    var b4 = (b1-b3)*b2;
+    document.getElementById("little_cost_b").innerHTML="￥"+b4;
+    document.getElementById("little_cost_b").value = b4;
+
+    var c1=document.getElementById("cost_c").value;
+    var c2=document.getElementById("number_c").value;
+    var c3=document.getElementById("discount_c").value;
+    var c4 = (c1-c3)*c2;
+    document.getElementById("little_cost_c").innerHTML="￥"+c4;
+    document.getElementById("little_cost_c").value = c4;
+
+    var d1=document.getElementById("cost_d").value;
+    var d2=document.getElementById("number_d").value;
+    var d3=document.getElementById("discount_d").value;
+    var d4 = (d1-d3)*d2;
+    document.getElementById("little_cost_d").innerHTML="￥"+d4;
+    document.getElementById("little_cost_d").value = d4;
+
+    var e1=document.getElementById("cost_e").value;
+    var e2=document.getElementById("number_e").value;
+    var e3=document.getElementById("discount_e").value;
+    var e4 = (e1-e3)*e2;
+    document.getElementById("little_cost_e").innerHTML="￥"+e4;
+    document.getElementById("little_cost_e").value = e4;
+
+    var all = a4+b4+c4+d4+e4;
+    document.getElementById("all_money").innerHTML = "￥"+all;
+    document.getElementById("all_money").value = all;
+    document.getElementById("mk_money").innerHTML = "￥"+all;
+    document.getElementById("mk_sure").value = all;
+
+    });
+
+    $("#mk_sure").click(function(){
+        var mk_money = document.getElementById("mk_sure").value;
+        location.href = "collect.html?param=" + mk_money;       
+
+    })
+
+    function check(){
+            var checkbox = document.getElementById("ch");//选中checkbox的id；
+            if(checkbox.checked==true){//按钮已选中
+                document.getElementById("mk_sure").style.backgroundColor="chocolate";
+                document.getElementById("mk_sure").removeAttribute("disabled");//移除disabled
+            }else{
+                document.getElementById("mk_sure").style.backgroundColor="grey";
+                document.getElementById("mk_sure").disabled="disabled";
+            }
+        }
+</script>

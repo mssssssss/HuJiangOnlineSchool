@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="font_73h1fig9o48/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/xiangxi.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="font_73h1fig9o48/iconfont.js"></script>
+    <title>详细页面</title>
+    
+</head>
+<body>
+    <div id="top" name="top"></div>
+    <div class="select">
+        <div class="select_info">
+            <div class="select_nav">
+                <a href="#">全部课程</a>
+                <span>></span>
+                <a href="#">英语</a>
+                <span>></span>
+                <a href="#">英语能力</a>
+                <span>></span>
+                <a href="#">零基础英语</a>
+            </div><br>
+            <img id="info_img" src="images/select_info.jpg">
+            <div class="select_tt"><strong>英语零基础直达大学六级【开学季特惠班】</strong></div>
+            <div class="select_tt_fu">英语零基础直达高级英语水平，英语盲也能成为英语通！</div>
+            <div class="select_tt_href"><a href="#">点击免费领取开学季专属资料包</a></div>
+            <div class="select_money"><strong><span id="str">￥1710</span>.41</strong><span id="hen">￥2899</span><span id="zhe">5.9折</span></div>
+            <div class="select_time">·&nbsp;开学季特惠！&nbsp;·
+                <p>距离结束<span class="clock_hou">26</span>时<span class="clock_min">35</span>分<span class="clock_sec">60</span>秒</p>
+            </div>
+            <div class="gift">
+                <div class="select_gift_tt">赠&nbsp;&nbsp;品</div>
+                <div class="gift_four">
+                    <div id="gift_fir">新概念英语&nbsp;新版&nbsp;1 <label>共<span>4</span>项</label>
+                    </div>
+                    <div class="gift_hide">新概念英语&nbsp;新版&nbsp;2</div>
+                    <div class="gift_hide">新概念英语&nbsp;新版&nbsp;3</div>
+                    <div class="gift_hide">新概念英语&nbsp;新版&nbsp;4</div>
+                </div>
+            </div>
+            <div class="class">
+                <div class="select_class_tt">选择班次</div>
+                <div class="class_two">
+                    <div class="class_show">开学季特惠&nbsp;381课时|报班即学 至 2020.09.05<label>其他班次</label>
+                    </div>
+                    <div class="class_hide">随到随学班&nbsp;381课时|报班即学，有效期620天</div>
+                </div>
+            </div>
+            <div class="select_btn">
+                <input id="buy" type="button"  onclick="javascript:jump()" value="立即购买">
+                <input id="query" type="button" value="课程查询">
+            </div>
+            <div class="select_bottom">
+                <label>授课机构：沪江网校</label>
+                <a id="sc" href="#"><label id="sc_wen" class="bottom_r">收藏课程(1324)</label>
+                <img id="sc_img" src="images/star_w.png"></a>
+                <label class="bottom_r" id="bottom_share">分享</label>
+                <img src="images/share.png" >
+                <div id="share">
+                    <img src="images/空间.png">
+                    <img src="images/weix.png">
+                    <img src="images/weib.png">
+                </div>
+            </div>
+            <div class="select_bottom_r">
+                <img src="images/money.png">
+                <label id="baojia_tt">15天保价</label>
+                <div id="baojia">自购买之日起15天内，同款产品售价下调，差价原路退还差价。特殊活动，包括但不限 “秒杀”、“团购”、“阶梯团”活动等，不参与保价政策。</div>
+                <img src="images/time.png">
+                <label id="yanqi_tt">免费延期</label>
+                <div id="yanqi">可申请一次免费延期，为期30天</div>
+            </div>
+        </div>
+    </div>
+    <div class="info_nav">
+        <ul>
+            <a class="info_nav_tt" value="1" href="#"><li id="nav1">课程详情</li></a>
+            <a class="info_nav_tt" value="2" href="#"><li id="nav2">课程大纲</li></a>
+            <a class="info_nav_tt" value="3" href="#"><li id="nav3">学员评价</li></a>
+        </ul>
+    </div>
+    <div class="info_box">
+        <div class="info_box_l">
+            <div id="info">
+                <img src="images/info.jpg">
+                <img src="images/info_bottom.png">
+                <div id="info_tt">售后说明</div>
+                <hr>
+                <div id="tt_fir">换班政策</div>
+                <ul>
+                    <li><strong>·换班规则：自课程开班之日起（除短期班的课程外）一个月内可接受换班申请</strong>，课程开班时间超过一个月不予换班。</li>
+                    <li>
+                        <p><strong>·短期班换班规则</strong>：纯录播课或课程中含录播课的短期班课程（<strong>短期班指课时数为45课时</strong>，含45课时）<strong>自课程开班之日起15天内可接受换班申请</strong>；纯直播课课程或纯直播短期班课程（<strong>短期班指课时数为10课时</strong>，含10课时）<strong>自课程开班之日起15天内可接受换班申请</strong>。超过上述时限申请换班的，沪江不予受理。</p>
+                        <p><strong>若按照上述规定申请换班，应遵守：</strong></p>
+                        <p>（1）换班需经过学员申请和沪江审批，换班差价需遵循现行售后政策。若已产生听课记录，须扣除已听部分费用，差价多退少补；同课不同班换班：自课程开班之日起7天内，且未产生听课记录，可申请换班至该课程的其他班级，差价不退不补。</p>
+                        <p>（2）如产生课程换班，开通课程时使用消耗的学习卡/优惠券将不能再次使用，亦不能在置换的班级中进行抵扣课程费用。</p>
+                        <p>（3）开通的课程只有一次换班机会，已申请并成功更换的课程不再接受换班申请。另外，成功换班后的课程，不再享有申请退班的权利。例如A课程-->B课程，B课程不能再次申请更换和退班。</p>
+                        <p>（4）更换课程中，若申请由课程费用低的班级换至为课程费用高的班级，根据学员的需要申请，沪江可提供差额部分费用对应的的发票；若换班申请是从课程费用高的班级换至课程费用低的班级，学员须将已开出的发票寄回，收到后方可申请换班，发票寄回费用由学员自行承担。</p>
+                    </li>
+                    <li><strong>·签约班，自课程开班之日起第8天不接受换班申请。</strong></li>
+                </ul>
+                <div id="note">注：以上规定如与具体课程协议约定不一致，以课程协议约定为准。</div>
+                <div id="price_tt">价格说明</div>
+                <hr>
+                <div id="price">
+                    <p>划线价：指商品的沪江网校指导价、合作方提供的建议零售价，划线价并非原价，仅供参考。</p>
+                    <p>未划线价格：指商品的实时标价，不因表述的差异改变性质。具体成交价格根据商品参加活动，或使用优惠券、学币、卡券等发生变化，最终以订单结算页价格为准。</p>
+                    <p>小贴士：此说明仅当出现价格比较时有效。因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现商品标价或促销信息有异常，请您立即联系我们，我们会及时补正。沪江网校祝您学习愉快！</p>
+                </div>
+            </div>
+
+            <div id="outline">
+                <div id="out_tt">
+                    <div id="all">全部</div>
+                    <div id="free">免费试听</div>
+                </div>
+                <ul id="unit">
+                    <li>
+                        <div class="unit_div_tt" value="0">
+                        <img src="images/unit0.png" style="width: 2.4rem" >
+                        试听单元 <span>免费试听</span></div>
+                        <hr>
+                        <div class="unit_div" id="u0">
+                            <ul class="unit_select" id="unit0">
+                                <li class="back_change"><a href="#">
+                                    <span class="green">·</span>
+                                    沪江网校学习指南
+                                    <span class="free_r">免费试听</span></a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    <span class="green">·</span>
+                                    沪江网校学习指南
+                                    <span class="free_r">免费试听</span></a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    <span class="green">·</span>
+                                    沪江网校学习指南
+                                    <span class="free_r">免费试听</span></a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    <span class="green">·</span>
+                                    沪江网校学习指南
+                                    <span class="free_r">免费试听</span></a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    <span class="green">·</span>
+                                    沪江网校学习指南
+                                    <span class="free_r">免费试听</span></a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    <span class="green">·</span>
+                                    沪江网校学习指南
+                                    <span class="free_r">免费试听</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="hi">
+                        <div class="unit_div_tt" value="1">
+                        <img src="images/unit1.png">
+                        音标课程</div>
+                        <hr>
+                        <div class="unit_div" id="u1">
+                            <ul class="unit_select" id="unit1">
+                                <li class="back_change"><a href="#">
+                                    音标学习
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    音标学习
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    音标学习
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    音标学习
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    音标学习
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    音标学习
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li  class="hi">
+                        <div class="unit_div_tt" value="2">
+                        <img src="images/unit2.png">
+                        Lessons 1 ~ 20</div>
+                        <hr>
+                        <div class="unit_div" id="u2">
+                            <ul class="unit_select" id="unit2">
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li  class="hi">
+                        <div class="unit_div_tt" value="3">
+                        <img src="images/unit3.png">
+                        Lessons 21 ~ 40</div>
+                        <hr>
+                        <div class="unit_div" id="u3">
+                            <ul class="unit_select" id="unit3">
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li  class="hi">
+                        <div class="unit_div_tt" value="4">
+                            <img src="images/unit4.png">
+                            Lessons 41 ~ 60
+                        </div>
+                        <hr>
+                        <div class="unit_div" id="u4">
+                            <ul class="unit_select" id="unit4">
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="hi">
+                        <div class="unit_div_tt" value="5">
+                            <img src="images/unit5.png">
+                            Lessons 61 ~ 80
+                        </div>
+                        <hr>
+                        <div class="unit_div" id="u5">
+                            <ul class="unit_select" id="unit5">
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                                <li class="back_change"><a href="#">
+                                    Excuse me！
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>    
+            
+            <div id="stu">
+                <div id="stu_tt">
+                    <img class="stu_l" src="images/juxin.png">
+                    <span class="stu_tt_l">学员评价</span>
+                    <span id="words_g">(50+评价)</span>
+                    <img class="star_r" src="images/stu_star.png">
+                    <img class="star_r" src="images/stu_star.png">
+                    <img class="star_r" src="images/stu_star.png">
+                    <img class="star_r" src="images/stu_star.png">
+                    <img class="star_r" src="images/stu_star.png">
+                    <span class="tt_r">综合评价</span>
+                </div>
+        
+                <ul class="sec" id="sec1">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou1.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                </ul>
+                
+                <ul class="sec" id="sec2">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou2.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou2.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec3">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou1.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec4">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou1.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou2.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou2.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec5">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou2.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec6">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou2.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec7">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou4.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec8">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou1.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou2.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec9">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou1.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou2.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">题目设置太多，文章讲解不够细致，课件内容太简略了！</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <ul class="sec" id="sec10">
+                    <li>
+                    <div>
+                        <div class="stu_info">
+                            <img class="tou" src="images/tou4.png">
+                            <span class="name">h***f</span>
+                        </div>
+                        <span class="time">2019-9-18</span><br>
+                        <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou4.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">第一次听到这么明朗的课程，抓住重点，简单易懂，谢谢😜</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou1.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">感谢老师，声音好好听，教学很认真。</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div class="stu_info">
+                                <img class="tou" src="images/tou3.png">
+                                <span class="name">h***f</span>
+                            </div>
+                            <span class="time">2019-9-18</span><br>
+                            <div class="ass">本节课目标明确，循序渐进，简明扼要，发音标准，继续努力💪</div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <div id="page">
+                    <div id="page_fix">
+                        <div class="turn" id="turn_up" value="up">< 上一页</div>
+                        <div class="page_num" id="page1" value="1">1</div>
+                        <div class="page_num" id="page2" value="2">2</div>
+                        <div class="page_num" id="page3" value="3">3</div>
+                        <div class="page_num" id="page4" value="4">4</div>
+                        <div class="page_num" id="page5" value="5">5</div>
+                        <div class="page_num" id="page6" value="6">6</div>
+                        <div class="page_num" id="page7" value="7">7</div>
+                        <div class="page_num" id="page8" value="8">8</div>
+                        <div class="page_num" id="page9" value="9">9</div>
+                        <div class="page_num" id="page10" value="10">10</div>
+                        <div class="turn" id="turn_down" value="down">下一页 ></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div>猜你喜欢</div>
+            <ul>
+                <li>
+                    <img src="images/news1.jpg">
+                    <div class="news_tt">
+                        英语零基础直达大学六级【开学季特惠班】
+                    </div>
+                    <div class="news_price">
+                        <span>￥1710</span>.41
+                    </div>
+                </li>
+                <li>
+                    <img src="images/news2.jpg">
+                    <div class="news_tt">
+                        BEC商务英语初、中、高级连读【开学季专享签约班】
+                    </div>
+                    <div class="news_price">
+                        <span>￥4001</span>.13
+                    </div>
+                </li>
+                <li>
+                    <img src="images/news3.jpg">
+                    <div class="news_tt">
+                        大学水平直达GATTI三级（笔译+口译）【开学季专项班】
+                    </div>
+                    <div class="news_price">
+                        <span>￥2888</span>.56
+                    </div>
+                </li>
+                <li>
+                    <img src="images/news4.jpg">
+                    <div class="news_tt">
+                        高中水平直达雅思7分【剑桥全能随到随学班】
+                    </div>
+                    <div class="news_price">
+                        <span>￥1668</span>.55
+                    </div>
+                </li>
+                <li>
+                    <img src="images/news5.jpg">
+                    <div class="news_tt">
+                        零基础直达BEC商务英语高级【开学季专享签约班】
+                    </div>
+                    <div class="news_price">
+                        <span>￥6444</span>.31
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="#top"><div class="upup" id="upup">
+        <img src="images/up.png">
+    </div></a>
+
+    <div class="float_nav" id="float_nav">
+        <ul>
+            <a class="float_nav_tt" value="1" href="#"><li id="f_nav1">课程详情</li></a>
+            <a class="float_nav_tt" value="2" href="#"><li id="f_nav2">课程大纲</li></a>
+            <a class="float_nav_tt" value="3" href="#"><li id="f_nav3">学员评价</li></a>
+        </ul>
+
+        <button onclick="javascript:jump()">立即购买</button>
+        <span>￥1710.41</span>
+    </div>
+
+    <div id="bottom"></div>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+<script>
+    
+    $(document).ready(function(){
+        //插入top.html
+        $("#top").load("top.html");
+        $("#bottom").load("bot.html")
+
+        //显示课程
+        $("#gift_fir").mouseenter(function(){
+            $(".gift_hide").show();
+            $(".gift_four").css("background-color","white"); 
+            $(".gift_four").css("z-index","100");
+            $(".gift_four").css("border","0.02rem solid rgb(167, 167, 167)");
+        });
+        $(".gift_four").mouseleave(function(){
+            $(".gift_hide").hide();
+            $(".gift_four").css("background-color","none"); 
+            $(".gift_four").css("z-index","1");
+            $(".gift_four").css("border","none");
+        });
+
+        //显示班级
+        $(".class_show").mouseenter(function(){
+            $(".class_hide").show();
+            $(".class_show").css("border","none");
+            $(".class_two").css("background-color","white"); 
+            $(".class_two").css("z-index","100");
+            $(".class_two").css("border","0.02rem solid chocolate");
+        });
+        $(".class_two").mouseleave(function(){
+            $(".class_hide").hide();
+            $(".class_show").css("border","0.02rem solid chocolate");
+            $(".class_two").css("background-color","none"); 
+            $(".class_two").css("z-index","1");
+            $(".class_two").css("border","none");
+        });
+
+        //分享
+        $("#bottom_share").mouseenter(function(){
+            $("#share").show();
+        })
+        $("#share").mouseleave(function(){
+            $("#share").hide();
+        })
+        
+        //收藏
+        $("#sc").click(function(){
+            var doc = document.getElementById("sc_wen").innerHTML;
+            if(doc=="已收藏"){
+                alert("取消收藏成功！");
+                document.getElementById("sc_wen").innerHTML = "收藏课程(1324)";
+                document.getElementById("sc_img").src="images/star_w.png";
+            }else{
+                alert("收藏成功！");
+                document.getElementById("sc_wen").innerHTML = "已收藏";
+                document.getElementById("sc_img").src="images/star_b.png";
+            }
+            
+        })
+
+        //保价
+        $("#baojia_tt").mouseenter(function(){
+            $("#baojia").show();
+        })
+        $("#baojia").mouseleave(function(){
+            $("#baojia").hide();
+        })
+        //延期
+        $("#yanqi_tt").mouseenter(function(){
+            $("#yanqi").show();
+        })
+        $("#yanqi").mouseleave(function(){
+            $("#yanqi").hide();
+        })
+
+        //点击导航栏
+        $(".info_nav_tt").click(function(){
+            var va = $(this).attr("value");
+            for(var i=1;i<4;i++){
+                $("#nav"+i).css("color","black");
+                $("#f_nav"+i).css("color","black");
+                $("#nav"+i).css("background-color","white");
+                $("#f_nav"+i).css("background-color","white");
+            }
+            $("#info").hide();
+            $("#outline").hide();
+            $("#stu").hide();
+            if( va == 1 ){
+                $("#info").show();
+            }else if(va == 2){
+                $("#outline").show();
+            }else if(va == 3){
+                $("#stu").show();
+            }
+            $("#nav"+va).css("color","white");
+            $("#f_nav"+va).css("color","white");
+            $("#nav"+va).css("background-color","#2aa515");
+            $("#f_nav"+va).css("background-color","#2aa515");
+        })
+        //点击漂浮导航栏
+        $(".float_nav_tt").click(function(){
+            var va = $(this).attr("value");
+            for(var i=1;i<4;i++){
+                $("#nav"+i).css("color","black");
+                $("#f_nav"+i).css("color","black");
+                $("#nav"+i).css("background-color","white");
+                $("#f_nav"+i).css("background-color","white");
+            }
+            $("#info").hide();
+            $("#outline").hide();
+            $("#stu").hide();
+            if( va == 1 ){
+                $("#info").show();
+            }else if(va == 2){
+                $("#outline").show();
+            }else if(va == 3){
+                $("#stu").show();
+            }
+            $("#nav"+va).css("color","white");
+            $("#f_nav"+va).css("color","white");
+            $("#nav"+va).css("background-color","#2aa515");
+            $("#f_nav"+va).css("background-color","#2aa515");
+        })
+        
+        
+        //课程列表的 
+         //点击出现列表
+         $(".unit_div_tt").click(function(){
+            var a = $(this).attr("value");
+            var dis = $("#u"+a).css("display");
+            if( dis == "none"){
+                $("#u"+a).show();
+            }else{
+                $("#u"+a).hide();
+            }
+        });
+
+        //鼠标滑到列表上
+        $(".back_change").mouseenter(function(){
+            $(this).css("background-color","rgb(235, 235, 235)");
+        });
+        $(".back_change").mouseleave(function(){
+            $(this).css("background-color","white");
+        });
+
+        $(".free_r").mouseenter(function(){
+            $(this).css("background-color","rgb(19, 175, 19)");
+            $(this).css("color","white");
+
+        });
+        $(".free_r").mouseleave(function(){
+            $(this).css("background-color","white");
+            $(this).css("color","rgb(19, 175, 19)");
+        });
+   
+
+        //点击全部
+        $("#all").click(function(){
+            $("#all").css("background-color","rgb(19, 175, 19)");
+            $("#all").css("color","white");
+            $("#free").css("background-color","white");
+            $("#free").css("color","rgb(19, 175, 19)");
+            $(".hi").show();
+            $("#u0").hide();
+        })
+        //点击免费
+        $("#free").click(function(){
+            $("#free").css("background-color","rgb(19, 175, 19)");
+            $("#free").css("color","white");
+            $("#all").css("background-color","white");
+            $("#all").css("color","rgb(19, 175, 19)");
+            $("#u0").show();
+            $(".hi").hide();
+        })
+
+        //学员评价
+        //分页
+        $(".page_num").click(function(){
+            var b = $(this).attr("value");
+            for(var i=1;i<11;i++){
+                $("#page"+i).css("color","black");
+                $("#page"+i).css("background-color","white");
+                $("#sec"+i).hide();
+            }
+            if(b==1){
+                $("#turn_up").hide();
+            }else{
+                $("#turn_up").show();
+            }
+            if(b==10){
+                $("#turn_down").hide();
+            }else{
+                $("#turn_down").show();
+            }            
+            $("#page"+b).css("color","white");
+            $("#page"+b).css("background-color","#2aa515");
+            $("#sec"+b).show();
+        })
+
+        //上一页
+        $("#turn_up").click(function(){
+            for(var i=1;i<11;i++){
+                var b;
+                var str = $("#page"+i).css("background-color");
+                if(str == "rgb(42, 165, 21)"){
+                    b=i;
+                    break;
+                    
+                }
+            }
+            if(b==10){
+                $("#turn_down").show();
+            }
+            if((b-1)==1){
+                $("#turn_up").hide();
+            }else{
+                $("#turn_up").show();
+            }
+            $("#page"+b).css("color","black");
+            $("#page"+b).css("background-color","white");
+            $("#sec"+b).hide();
+
+            b = b-1;
+            $("#page"+b).css("color","white");
+            $("#page"+b).css("background-color","#2aa515");
+            $("#sec"+b).show();
+        })
+
+        //下一页
+        $("#turn_down").click(function(){
+            for(var i=1;i<11;i++){
+                var b;
+                var str = $("#page"+i).css("background-color");
+                if(str == "rgb(42, 165, 21)"){
+                    b=i;
+                    break;
+                }
+            }
+            if(b==1){
+                $("#turn_up").show();
+            }
+            if((b+1)==10){
+                $("#turn_down").hide();
+            }else{
+                $("#turn_down").show();
+            }
+            $("#page"+b).css("color","black");
+            $("#page"+b).css("background-color","white");
+            $("#sec"+b).hide();
+
+            b = b+1;
+            $("#page"+b).css("color","white");
+            $("#page"+b).css("background-color","#2aa515");
+            $("#sec"+b).show();
+        })
+    })
+
+    //滚动到一定距离展示
+    var info_height = $(".info_nav").offset().top;
+    $(window).scroll(function(){
+        var this_scrollTop = $(this).scrollTop();
+        if(this_scrollTop>info_height ){
+            $("#upup").show();
+            $("#float_nav").show();
+        }else{
+            $("#upup").hide();
+            $("#float_nav").hide();
+        }
+    });
+
+    // 时间倒计时
+    var s = 60;
+    var m = 35;
+    var h = 26
+        var sec = document.getElementsByClassName("clock_sec")[0];
+        var min = document.getElementsByClassName("clock_min")[0];
+        var hou = document.getElementsByClassName("clock_hou")[0];
+        function fun() {
+            s--;
+            sec.innerHTML = s;
+            min.innerHTML = m;
+            hou.innerHTML = h;
+            if(s == 0) {
+                s = 60;
+                m --;
+            }
+            if(m == 0){
+                m = 60 ;
+                h --;
+            }
+        }
+        var inter = setInterval("fun()", 1000);
+        
+        //跳转
+        function jump(){
+        window.location.href="./settlement.html";
+        }
+        
+</script>

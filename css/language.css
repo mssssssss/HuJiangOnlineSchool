@@ -1,0 +1,117 @@
+.cour {
+    width: 100%;
+}
+
+.cour>li>ul {
+    display: flex;
+}
+
+.cour>li {
+    border-bottom: 0.01rem solid #eee;
+    font-size: 0.4rem;
+    height: 4.8rem;
+    color: #666;
+}
+.cour>li:nth-last-child(1){
+    border-bottom:none;
+}
+
+.cour>li>div {
+    float: left;
+}
+
+.cour img {
+    width: 5.3rem;
+    padding: 0.6rem;
+    height: 3.5rem;
+}
+
+.cour>li>ul>li:nth-child(2) {
+    padding: 0.6rem;
+    padding-left: 0;
+}
+
+.cour-right>li {
+    margin: 0.25rem;
+}
+
+.cour-right>li:nth-child(1) {
+    font-size: 0.5rem;
+}
+
+.cour-right>li:nth-child(1) a:nth-child(1) {
+    font-family: '黑体';
+    margin-right: 0.2rem;
+}
+
+.cour-right>li:nth-child(1) a:nth-child(1):hover {
+    color: rgb(108, 199, 62);
+}
+
+.cour-right>li:nth-child(1) a:nth-child(2) {
+    color: rgb(125, 196, 110);
+}
+
+.cour-right>li:nth-child(2) a:nth-child(1) {
+    color: rgb(255, 102, 0);
+    margin-right: 0.2rem;
+}
+
+.cour-right>li:nth-child(2) a:nth-child(2) {
+    color: #666
+}
+.cour-right>li:nth-child(2) a:nth-child(2):hover {
+    color: rgb(108, 199, 62);
+}
+
+.cour-right>li:nth-child(3) span:nth-child(1) {
+    color: rgb(255, 102, 0);
+    font-size: 0.5rem;
+    margin-right: 0.2rem;
+}
+
+.cour-right>li:nth-child(3) span:nth-child(2) {
+    text-decoration: line-through;
+    font-size: 0.35rem;
+}
+
+.cour-right>li:nth-last-child(1)>ul {
+    display: flex;
+}
+
+.cour-right>li:nth-last-child(1)>ul>li:nth-child(1) {
+    width: 8rem;
+}
+
+.cour-right>li:nth-last-child(1)>ul>li:nth-child(2) {
+    width: 12rem;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 0.5rem;
+}
+
+.cour-right>li:nth-last-child(1)>ul>li:nth-child(3) {
+    width: 3rem;
+
+}
+
+.cour-right>li:nth-last-child(1)>ul>li:nth-last-child(1) a {
+    color: rgb(107, 216, 88);
+    padding: 0.15rem 0.4rem;
+    border: 0.01rem solid rgb(107, 216, 88);
+    border-radius: 0.05rem;
+
+
+}
+
+.cour-right>li:nth-last-child(1)>ul>li:nth-last-child(1):hover a {
+    color: #fff;
+    background-color: rgb(87, 188, 76);
+    border: none;
+}
+
+.cour .icon-bofang {
+    font-size: 0.4rem;
+    margin-right: 0.1rem;
+}

@@ -1,0 +1,154 @@
+html{
+    font-family: "黑体";
+}
+header{
+    padding: 0 3.5rem;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-bottom:0.02rem solid #dbdbdc;
+    box-shadow:0rem 0rem  0.1rem 0.1rem #e1e2e3;
+}
+section{
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    margin-top:0.11rem; 
+    text-align: center;
+}
+footer{
+    width:100%;
+    height: 0.8rem;
+    text-align: center;
+    font-size: 0.35rem;
+    margin-top:0.8rem; 
+}
+#top_left{
+    font-size: 0.65rem;
+    color: rgb(66, 66, 66);
+    float: left;
+}
+#top_right1,#top_right2{
+    float: right;
+    font-size: 0.32rem;
+}
+#top_right1{
+    margin-left:0.5rem; 
+    color: rgb(5, 4, 4);
+}
+#top_right2{
+    margin-right: 0.5rem;
+    color: rgb(150, 150, 150);
+}
+#settlement{
+    width: 23rem;
+    height: 17rem;
+    padding: 0.8rem 1.5rem 1rem 1.5rem;
+    background-color:white;
+    margin: 0 auto;
+    position: relative;
+    top:1rem;
+    border-bottom:0.03rem solid rgb(150, 150, 150); 
+}
+#title{
+    width: 100%;
+    height: 0.5rem;
+    font-size: 0.45rem;
+}
+#title>span{
+    float: left;
+}
+.settlement_right{
+    width: 10rem;
+    float: right;
+    display: flex;
+    
+}
+.settlement_right_gg{
+    width: 20%;
+    text-align: right;
+    font-size: 0.37rem;
+    color: rgb(150, 150, 150);
+}
+.settlement_right_gg>input{
+    width: 0.7rem;
+}
+#settlement>ul{
+    width: 100%;
+    float: left;
+    font-size: 0.4rem;
+    display: flex;
+    margin-top:0.5rem;
+}
+#settlement>ul>li{
+    width:50%;
+}
+.settlement_goods_tt{
+    text-align:left;
+    margin-left:0.5rem;
+}
+#settlement>ul>li>ul>li{
+    color: black;
+}
+#settlement_all_money{
+    text-align: right;
+    width: 100%;
+    float: right;
+    margin-top:0.7rem;
+}
+#settlement_all_money>span{
+    margin-left:1rem;
+}
+#all_money{
+    color: chocolate;
+    font-size: 0.4rem;
+}
+#stu_information{
+    text-align: left;
+    width: 100%;
+    float: left;
+    font-size: 0.45rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+#stu_information>div>span{
+    margin-right: 0.5rem;
+}
+#stu_information>div{
+    margin-top: 0.3rem;
+}
+#accept{
+    margin-top:0.5rem;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+#accept>span{
+    font-size: 0.4rem;
+    color: rgb(150, 150, 150);
+}
+#accept>a{
+    text-decoration: none;
+}
+#make_sure{
+    width: 100%;
+    float: right;
+    text-align: right;
+    color: rgb(150, 150, 150);
+}
+#make_sure>span{
+    font-size: 0.75rem;
+    color: chocolate;
+    margin-left: 0.8rem;
+}
+#make_sure>button{
+    background-color:grey; 
+    font-size: 0.45rem;
+    color: white;
+    margin-top: 0.5rem;
+    width: 3.7rem;
+    height: 1.2rem;
+    border: 0;
+    border-radius: 0.1rem;
+    outline: none;
+}
