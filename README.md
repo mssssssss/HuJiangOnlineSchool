@@ -9,4 +9,4 @@ Html5+CSS3+JQuery+Bootstrap实现的仿 沪江网校静态项目
 - 课程结算页面(类似购物车功能)
 - 课程支付页面
 
-## 项目演示:https://sbdqs.github.io/huJiangOnlineSchool/
+## 项目演示:https://mssssssss.github.io/HuJiangOnlineSchool/
